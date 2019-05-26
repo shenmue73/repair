@@ -5,13 +5,20 @@ body
   margin: auto
 @media (max-width: 1200px)
   .conteiner
-      width: 770px
+    width: 770px
 @media (max-width: 768px)
   .conteiner
-      width: 570px
+    width: 570px
+  .navbar__contacts
+    display: none
+
 
 .button
   border-radius: 10px
   border: none
   padding: 18px 30px 13px 30px
   background-color: $main-color
+  outline: none
+  &:hover
+    background-color: lighten($main-color, 30%)
+    cursor: pointer
