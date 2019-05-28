@@ -21,7 +21,7 @@ body {
 
 @media (max-width: 540px) {
   .container {
-    width: 320px;
+    width: 279px;
   }
 }
 
@@ -100,7 +100,6 @@ body {
 @media (max-width: 540px) {
   .navbar-logo__image {
     width: 91px;
-    margin-left: 23px;
   }
   .navbar-block {
     width: 100%;
@@ -114,7 +113,6 @@ body {
     padding-bottom: 15px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-right: 23px;
   }
 }
 
@@ -186,6 +184,7 @@ body {
 
 .hero-list__text {
   max-width: 300px;
+  line-height: 24px;
 }
 
 .hero-image__image {
@@ -220,7 +219,7 @@ body {
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 13px;
-    width: 300px;
+    width: 279px;
   }
   .hero-text__subtitle {
     font-size: 16px;
