@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  width: 1211px;
+  width: 1170px;
   margin: auto;
 }
 
@@ -90,6 +90,7 @@ body {
 
 .hero {
   padding: 50px 0 50px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -101,7 +102,7 @@ body {
 .hero-text {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  padding-right: 160px;
+  padding-right: 110px;
 }
 
 .hero-text__title {
@@ -109,14 +110,14 @@ body {
   font-weight: 700;
   line-height: 60px;
   min-width: 500px;
+  margin-bottom: 10px;
 }
 
 .hero-text__subtitle {
   font-size: 20px;
   font-weight: 5500;
   line-height: 65px;
-  padding-button: 100px;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
   display: inline-block;
 }
 
@@ -132,7 +133,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 21px;
 }
 
 .hero-list__image {
@@ -157,5 +158,7 @@ body {
 }
 
 .hero-image__image {
-  width: 640px;
+  width: 110%;
+  -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+          box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
