@@ -9,9 +9,14 @@
 @font-face {
   font-family: 'Museo Sans Bold';
   src: url("../fonts/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("..fonts/MuseoSansCyrl-700.woff") format("woff"), url("..fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  src: url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -53,6 +58,28 @@ body {
 .button:hover {
   background-color: #ffed99;
   cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  display: block;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -148,7 +175,7 @@ body {
 .hero-text {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  padding-right: 110px;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -252,6 +279,9 @@ body {
   .hero-list__item {
     margin-bottom: 20px;
   }
+  .hero-list__item:last-child {
+    margin-bottom: 0;
+  }
   .hero-list__text {
     font-size: 12px;
   }
@@ -264,5 +294,141 @@ body {
   }
   .hero-list__item {
     width: 279px;
+  }
+}
+
+.offer {
+  background: url("../../img/offer-img.png") no-repeat;
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.offer-connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 31px;
+}
+
+.offer-manager {
+  min-width: 200px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer-phone {
+  line-height: 24px;
+  width: 40%;
+  margin-left: 70px;
+}
+
+.offer-phone__text {
+  display: block;
+  min-width: 224px;
+  font-size: 15px;
+}
+
+.offer-phone__tel {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 350px;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+  .offer-connection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer-manager {
+    margin-top: 27px;
+    max-width: 200px;
+  }
+  .offer-phone {
+    margin: 18px 0 0 0;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    max-width: 259px;
+    line-height: 1.4;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer-connection {
+    font-size: 14px;
+    margin-top: 27px;
   }
 }

@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body 
   +reg
 .container
@@ -26,3 +28,16 @@ body
   &:hover
     background-color: lighten($main-color, 30%)
     cursor: pointer
+.section  
+  padding: 90px 0
+  &-title
+    font-size: 15px
+    +bold
+  &-subtitle
+    font-size: 16px
+    display: block
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
