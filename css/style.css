@@ -247,6 +247,7 @@ body {
   .hero-text__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
+    width: auto;
   }
   .hero-list__item {
     margin-bottom: 20px;
@@ -260,5 +261,8 @@ body {
   .hero-text__subtitle {
     width: 200px;
     line-height: 1.4;
+  }
+  .hero-list__item {
+    width: 279px;
   }
 }
