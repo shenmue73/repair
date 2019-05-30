@@ -413,6 +413,7 @@ body {
 
 @media (max-width: 768px) {
   .offer {
+    padding: 54px 0;
     background: #fff;
   }
   .offer-block {
