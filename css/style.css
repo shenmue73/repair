@@ -376,6 +376,7 @@ body {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -472,4 +473,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  outline: none;
+  background-color: #ffd200;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
+  background-color: #ffed99;
 }
