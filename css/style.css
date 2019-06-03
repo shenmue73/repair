@@ -309,6 +309,9 @@ body {
     line-height: 1.4;
     margin-top: 0;
   }
+  .hero-list {
+    margin-bottom: 35px;
+  }
   .hero-list__item {
     width: 279px;
   }
