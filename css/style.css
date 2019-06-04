@@ -328,7 +328,7 @@ body {
 
 .offer {
   background: url("../img/offer-img.png") no-repeat;
-  background-size: contain;
+  background-size: uncet;
   background-position: center right;
   position: relative;
 }
