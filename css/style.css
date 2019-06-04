@@ -333,7 +333,7 @@ body {
 
 .offer {
   background: url("../img/offer-img.png") no-repeat;
-  background-size: uncet;
+  background-size: contain;
   background-position: center right;
   position: relative;
 }
@@ -395,6 +395,7 @@ body {
   font-size: 24px;
   line-height: 35px;
   margin-bottom: 21px;
+  margin-top: 40px;
   text-align: left;
 }
 
@@ -418,7 +419,7 @@ body {
   min-height: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 @media (max-width: 1200px) {
@@ -463,6 +464,7 @@ body {
     max-width: 270px;
     line-height: 1.2;
     margin-bottom: 20px;
+    margin-top: 15px;
   }
   .offer__subtitle {
     font-size: 14px;
@@ -477,6 +479,7 @@ body {
 @media (max-width: 768px) and (max-width: 540px) {
   .offer-manager {
     min-width: 230px;
+    margin-top: 21px;
   }
   .offer-connection {
     margin-left: 5px;
@@ -551,12 +554,14 @@ body {
 }
 
 .portfolio__title {
-  max-width: 600px;
+  margin-top: 58px;
   font-size: 30px;
   font-weight: 400;
   line-height: 45px;
-  margin: auto;
-  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 93px;
+  padding-left: 3px;
 }
 
 .portfolio__arrows {
@@ -571,17 +576,29 @@ body {
           justify-content: space-between;
 }
 
+.slider {
+  margin: 0 -15px;
+}
+
+.slider__item {
+  outline: none;
+}
+
 .slider__image {
   margin: auto;
 }
 
 @media (max-width: 768px) {
+  .portfolio {
+    background: none;
+  }
   .portfolio__title {
     font-size: 18px;
     font-weight: 400;
-    max-width: 270px;
+    max-width: 300px;
     line-height: 1.2;
     margin-bottom: 41px;
+    margin-top: 22px;
   }
   .portfolio__arrows {
     margin-top: 46px;
