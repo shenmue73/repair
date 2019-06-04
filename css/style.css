@@ -68,6 +68,7 @@ body {
   font-size: 15px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -80,6 +81,10 @@ body {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -390,6 +395,7 @@ body {
   font-size: 24px;
   line-height: 35px;
   margin-bottom: 21px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -535,4 +541,56 @@ body {
 .modal-dialog__close:hover {
   cursor: pointer;
   background-color: #ffed99;
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+  background: url("../img/portfolio-img.jpg") repeat-y center left;
+  background-size: 50%;
+  padding-bottom: 64px;
+}
+
+.portfolio__title {
+  max-width: 600px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .portfolio__title {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 270px;
+    line-height: 1.2;
+    margin-bottom: 41px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+}
+
+@media (max-width: 540px) {
+  .slider__image {
+    width: 246px;
+    height: 186px;
+  }
 }

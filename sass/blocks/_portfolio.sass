@@ -1,0 +1,36 @@
+.portfolio
+  background-color: $another-color
+  background: url('../img/portfolio-img.jpg') repeat-y center left
+  background-size: 50%
+  padding-bottom: 64px
+  &__title
+    max-width: 600px
+    font-size: 30px
+    font-weight: 400
+    line-height: 45px
+    margin: auto
+    margin-bottom: 100px
+  &__arrows
+    max-width: 120px
+    margin: auto
+    margin-top: 68px
+    display: flex
+    justify-content: space-between
+.slider
+  &__image
+    margin: auto
+@media (max-width: 768px)
+  .portfolio
+    &__title
+      font-size: 18px
+      font-weight: 400
+      max-width: 270px
+      line-height: 1.2
+      margin-bottom: 41px
+    &__arrows
+      margin-top: 46px
+@media (max-width: 540px)
+  .slider
+    &__image
+          width: 246px
+          height: 186px
