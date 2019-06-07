@@ -1,20 +1,41 @@
 .brif
+  padding-top: 81px
+  padding-bottom: 80px
   background-image: url('../img/orange.jpg'), url('../img/white.jpg')
-  background-position: left center, center right 
-  background-size: 50%, contain
+  background-position: left center, right center
+  background-size: 50%, cover 
   background-repeat: repeat-y, no-repeat
   &-block
     display: flex
   &__interview
     flex-basis: 50%
+ 
   &__form
     flex-basis: 50%
+    padding-left: 216px
+    text-align: center
+  &__input
+    width: 100%
+    max-width: 370px
+    min-height: 65px
+    margin-bottom: 15px
+  &__button
+    +bold
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    height: 70px
+    width: 100%
+    max-width: 370px
+    margin-top: 15px
+    margin-bottom: 27px
 .interview
-  padding-right: 70px
+  padding-right: 0
   &__title
-    margin-bottom: 50px
+    margin-bottom: 46px
     font-size: 22px
     +bold
+    line-height: 1.4
   &__subtitle
     display: block
     font-size: 16px
@@ -22,11 +43,20 @@
   &-list
     list-style: none
     padding: 0
+
+      align-items: baseline
     &__item
       display: flex
       align-items: center
       +bold
       margin-bottom: 25px
+      &:nth-child(3) 
+        align-items: baseline
+        margin-top: 30px
+      &:last-child
+        margin-top: 30px
+     
+      
     &__counter
       display: inline-block
       line-height: 35px
@@ -39,7 +69,73 @@
       font-size: 14px
 
     &__text
-      min-width: 400px
+      max-width: 400px
+      font-size: 18px
+      font-weight: 400
+    
+      
+     
+.form
+  &__title
+    margin-bottom: 46px
+    font-size: 22px
+    line-height: 1.4
+    +bold
+  &__subtitle
+    display: block
+    font-size: 16px
+    margin-bottom: 50px
+  &__description
+    display: block
+    text-align: center
+    font-size: 15px
+    font-weight: 400
+    line-height: 24px
+@media (max-width: 1200px)
+  .brif
+    &__form
+      padding-left: 30px
+  .interview
+    padding-right:  30px
+    margin-bottom: 15px 
+    &__title
+      font-size: 20px
+      margin-bottom: 15px
+    &__subtitle
+      margin-bottom: 30px
+    &-list
+      &__text
+        font-size: 14px
+        min-width: 300px
+      &__counter
+        margin-right: 20px
+  .form
+    &__title
+      font-size: 20px
+      margin-bottom: 15px
+    &__subtitle
+      margin-bottom: 30px
+
+@media (max-width: 927px)
+  .brif
+    padding: 100px 0 100px 0
+    background-image: url('../img/orange.jpg'), url('../img/white.jpg')
+    background-position: left center, right center
+    background-size: 50%, cover 
+    background-repeat: repeat-y, no-repeat
+@media (max-width: 768px)
+  .brif
+    background-image: url('../img/orange.jpg'), url('../img/white.jpg')
+    background-position: top center, bottom center
+    background-size: 100% 50%, cover 
+    background-repeat: repeat-x, no-repeat
+    &-block
+      flex-direction: column
+
+
+
+
+
 
 
   
