@@ -87,6 +87,10 @@ body {
   cursor: pointer;
 }
 
+.input {
+  outline: none;
+}
+
 .navbar {
   padding: 7px 0 8px 0;
 }
