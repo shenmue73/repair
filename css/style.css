@@ -91,6 +91,10 @@ body {
   outline: none;
 }
 
+#phone-error {
+  margin-left: 10px;
+}
+
 .navbar {
   padding: 7px 0 8px 0;
 }
