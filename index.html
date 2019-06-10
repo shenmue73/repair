@@ -79,9 +79,9 @@
               <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку 
                 бесплатного дизайн-проекта!</span>
               <!-- /.section-subtitle -->
-              <form action="#" class="form offer__form">
-                <input type="text" class="input offer__input" placeholder="Ваше имя">
-                <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+              <form action="#" id="offer-form" class="form offer__form">
+                <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                <input type="tel" name="phone"  class="input offer__input phone" placeholder="Ваш телефон">
                 <button class="button offer__button">Получить бесплатный дизайн-проект
                 </button>
               </form>
@@ -312,6 +312,35 @@
     </div>
     <!-- /.section brif -->
   </main>
+  <footer class="footer">
+    <div class="map" id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab647cc3254aa819e2aab75b53e17806d00826cc2f6e11b721d528f1dc6dd137c&amp;width=100%25&amp;height=638&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+  <div class="contacts-block">
+    <div class="contacts">
+      <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас <br> по всем вопросам ремонта</h3>
+      <ul class="contacts-list">
+        <li class="contacts-list__item">
+          <span class="contacts-list__icon">
+            <img class="contacts-list__icon-image" src="img/map.png" alt="">
+          </span> <!-- /.contacts-list_icon --><span class="contacts-list__text">г. Москва <br> ул. Ленинга, д. 10, <br> <span class="contacts-list__text-bold">корпус 2, оф. 308</span> </span> <!-- /.contacts-list__text --></li>
+        <!-- /.contacts-list__item -->
+        <li class="contacts-list__item">
+          <span class="contacts-list__icon">
+            <img class="contacts-list__icon-image" src="img/clock-map.png" alt="">
+          </span> <!-- /.contacts-list_icon --><span class="contacts-list__text">Режим работы: <br> <span class="contacts-list__text-bold">с 9:00 до 18:00</span> </span> <!-- /.contacts-list__text --></li>
+        <!-- /.contacts-list__item -->
+        <li class="contacts-list__item">
+          <span class="contacts-list__icon">
+            <img class="contacts-list__icon-image" src="img/phone-map.png" alt="">
+          </span> <!-- /.contacts-list_icon --><span class="contacts-list__text">Телефон: <br> <a class="contacts-list__text-bold" href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a> </span> <!-- /.contacts-list__text --></li>
+        <!-- /.contacts-list__item -->
+      </ul>
+      <!-- /.contacts-list -->
+    </div>
+  </div>
+  </footer>
+  <!-- /.footer section -->
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
@@ -336,6 +365,41 @@
 $(document).ready(function(){
 
   $('#brif-form').validate({
+    rules: {
+      username: {
+      required: true,
+      maxlength: 15,
+      minlength: 2
+    },
+      phone: {
+      required: true 
+      },
+      email: {
+      required: true,
+      email: true
+
+      }
+    },
+    messages: {
+      username: {
+      required: "Заполните поле",
+      minlength: jQuery.validator.format("Не меньше {0} символов:"),
+      maxlength: jQuery.validator.format("Не больше {0} символов:")
+    },
+    phone: {
+      required: "Заполните поле"
+    },
+    email: {
+      required: "Заполните поле",
+      email: "Введите корректный email"
+    }
+
+    }
+  
+  });
+$('.phone').mask('+8 (999) 999-99-99');
+
+$('#offer-form').validate({
     rules: {
       username: {
       required: true,
