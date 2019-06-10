@@ -31,7 +31,7 @@ body {
 
 @media (max-width: 1200px) {
   .container {
-    width: 770px;
+    width: 750px;
   }
 }
 
@@ -152,6 +152,9 @@ body {
 @media (max-width: 768px) {
   .navbar__contacts {
     display: none;
+  }
+  .navbar-logo__image {
+    width: 91px;
   }
 }
 
