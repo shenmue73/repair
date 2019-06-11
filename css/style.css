@@ -1308,3 +1308,163 @@ body {
     margin-right: 10px;
   }
 }
+
+.information {
+  background-color: #ffc000;
+  padding-top: 87px;
+  padding-bottom: 90px;
+}
+
+.information__text {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .information {
+    padding: 70px 33px 70px 20px;
+  }
+  .information__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+.peoples {
+  padding-top: 100px;
+}
+
+.peoples-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.people {
+  position: relative;
+  height: 410px;
+  width: 370px;
+  margin-right: 26px;
+  background-color: #f7f7f7;
+}
+
+.people:last-child {
+  margin-right: 0;
+}
+
+.people__img {
+  bottom: 0;
+  position: absolute;
+}
+
+.people__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 305px;
+  padding-left: 25px;
+  padding-top: 8px;
+}
+
+.people__text-bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.people__text-last {
+  max-width: 310px;
+}
+
+@media (max-width: 1200px) {
+  .peoples {
+    padding-top: 60px;
+  }
+  .peoples-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .people {
+    width: 300px;
+    height: 340px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .people__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .people {
+    width: 272px;
+    height: 300px;
+  }
+  .people__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 250px;
+    padding-left: 20px;
+    padding-top: 6px;
+  }
+}
+
+.contract {
+  padding-top: 16px;
+}
+
+.contract-title {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 99px;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.4;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contract-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contract-paper {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding-left: 60px;
+}
+
+.contract-paper:first-child {
+  padding-left: 42px;
+}
+
+.contract-paper__img {
+  border: 20px solid #f5f5f5;
+  width: 270px;
+  height: 360px;
+  padding: 5px;
+}
+
+.contract-paper__text {
+  max-width: 300px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
